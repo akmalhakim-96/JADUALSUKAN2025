@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadual Hari Sukan Sekolah Tinta</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Pautan ke fail CSS -->
+</head>
+<body>
+    <div class="header">
+        <div class="header-top-row">
+            <img src="img/Sports Day 2024.png" alt="Logo Sekolah" onerror="this.onerror=null;this.src='https://placehold.co/100x80/FFD700/000000?text=LOGO';" />
+            <img src="img/QR (1).png" alt="Gambar Sukan" onerror="this.onerror=null;this.src='https://placehold.co/150x80/87CEEB/000000?text=GAMBAR+SUKAN';" />
+        </div>
+        <div class="header-content">
+            <h1>Jadual Hari Sukan Sekolah Tinta</h1>
+            <h2>Sabtu, 16 Ogos 2025</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Div untuk memaparkan acara semasa secara menonjol di bahagian atas -->
+        <div id="current-event-display" class="bg-blue-50 border border-blue-200 text-blue-800 p-4 rounded-lg mb-6 shadow-md hidden">
+            <h3 class="text-lg font-bold mb-2 flex items-center justify-center">
+                <span class="live-indicator-large mr-3"></span>
+                Acara Semasa:
+            </h3>
+            <p id="current-event-time" class="text-center text-xl font-semibold mb-1"></p>
+            <div id="current-event-details" class="text-center text-lg"></div>
+        </div>
+
+        <table class="event-table" id="sportsDaySchedule">
+            <thead>
+                <tr>
+                    <th>Masa</th>
+                    <th>Acara</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-start="06:00" data-end="06:59">
+                    <td>6.00 AM</td>
+                    <td>Ketibaan ahli jawatankuasa untuk persediaan dan sentuhan akhir</td>
+                </tr>
+                <tr data-start="07:00" data-end="07:44">
+                    <td>7.00 AM</td>
+                    <td>Ketibaan pelajar & ibu bapa</td>
+                </tr>
+                <tr data-start="07:45" data-end="07:49">
+                    <td>7.45 AM</td>
+                    <td>Ucapan alu-aluan oleh emcee</td>
+                </tr>
+                <tr data-start="07:50" data-end="08:29">
+                    <td>7.50 AM</td>
+                    <td>
+                        <span class="font-semibold">PERBARISAN LINTAS HORMAT</span>
+                        <ul class="list-disc list-inside mt-1">
+                            <li>Mecha</li>
+                            <li>Techno</li>
+                            <li>Voltra</li>
+                            <li>Cyborg</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr data-start="08:30" data-end="08:59">
+                    <td>8.30 AM</td>
+                    <td>
+                        <span class="font-semibold">MAJLIS PEMBUKAAN</span>
+                        <ul class="list-disc list-inside mt-1">
+                            <li>NEGARAKU</li>
+                            <li>BACAAN DO'A</li>
+                            <li>IKRAR SEKOLAH</li>
+                            <li>UCAPAN PENGETUA SEKOLAH TINTA - T. ZALINA (3 MIN)</li>
+                            <li>GIMIK PEMBUKAAN HARI SUKAN (KIV)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr data-start="09:00" data-end="09:59">
+                    <td>9.00 AM</td>
+                    <td><span class="font-semibold">SUKANEKA & ACARA PADANG BERMULA</span></td>
+                </tr>
+                <tr data-start="10:00" data-end="10:59">
+                    <td>10.00 AM</td>
+                    <td>
+                        <span class="font-semibold">ACARA BALAPAN BERMULA</span>
+                        <ul class="list-disc list-inside mt-1">
+                            <li>Balapan 50 meter (L) (Y1-Y2)</li>
+                            <li>Balapan 50 meter (P) (Y1-Y2)</li>
+                            <li>Balapan 100 meter (L) (Y3-Y4)</li>
+                            <li>Balapan 100 meter (P) (Y3-Y4)</li>
+                            <li class="prize-giving">PENYAMPAIAN HADIAH</li>
+                            <li>Balapan 100 meter (L) (Y5-Y6)</li>
+                            <li>Balapan 100 meter (P) (Y5-Y6)</li>
+                            <li>Balapan 100 meter (L) (F1-F3)</li>
+                            <li>Balapan 100 meter (P) (F1-F3)</li>
+                            <li class="prize-giving">PENYAMPAIAN HADIAH</li>
+                            <li>Balapan 100 meter (L) (Y1-Y2)</li>
+                            <li>Balapan 100 meter (P) (Y1-Y2)</li>
+                            <li>Balapan 200 meter (L) (Y3-Y4)</li>
+                            <li>Balapan 200 meter (P) (Y3-Y4)</li>
+                            <li class="prize-giving">PENYAMPAIAN HADIAH</li>
+                            <li>Balapan 8X50 meter (L) (Y1-Y2)</li>
+                            <li>Balapan 8X50 meter (P) (Y1-Y2)</li>
+                            <li>Balapan 4X100 meter (L) (Y3-Y4)</li>
+                            <li>Balapan 4X100 meter (P) (Y3-Y4)</li>
+                            <li>Balapan 4X100 meter (L) (Y5-Y6)</li>
+                            <li>Balapan 4X100 meter (P) (Y5-Y6)</li>
+                            <li class="prize-giving">PENYAMPAIAN HADIAH</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr data-start="11:00" data-end="11:29">
+                    <td>11.00 AM</td>
+                    <td><span class="font-semibold">ACARA IBU BAPA BERMULA</span> (TARIK TALI / SUKANEKA IBU BAPA)</td>
+                </tr>
+                <tr data-start="11:30" data-end="12:29">
+                    <td>11.30 AM</td>
+                    <td class="prize-giving"><span class="font-semibold">MAJLIS PENYAMPAIAN HADIAH</span></td>
+                </tr>
+                <tr data-start="12:30" data-end="13:29">
+                    <td>12.30 PM</td>
+                    <td><span class="font-semibold">MENGEMAS DAN MEMBERSIH</span></td>
+                </tr>
+                <tr data-start="13:30" data-end="13:30"> <!-- Updated data-end for precise end of schedule -->
+                    <td>1.30 PM</td>
+                    <td><span class="font-semibold">TAMAT HARI SUKAN</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Div untuk memaparkan mesej tamat kejohanan -->
+        <div id="end-message-display" class="bg-green-100 border border-green-400 text-green-800 p-8 rounded-lg mt-8 text-center hidden">
+            <h3 class="text-3xl font-extrabold mb-4 text-green-700">TAMATLAH KEJOHANAN SUKAN TAHUNAN 2025!</h3>
+            <p class="text-2xl font-semibold text-green-600">TAHNIAH KEPADA PEMENANG!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Pautan ke fail JavaScript -->
+</body>
+</html>
